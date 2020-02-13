@@ -24,6 +24,11 @@ public class Var<T>: NSObject {
     // MARK: - Public Properties
     
     /**
+     Manual listener for the value.
+     */
+    public var valueDidChange: ((T) -> Void)?
+    
+    /**
      The stored value getter and setter, when this value is setted, the method `elementDidChange` is called.
      */
     public var value: T {
@@ -61,6 +66,7 @@ public class Var<T>: NSObject {
      Method to destroy the listener method and remove all the binded elements.
      */
     public func destroy() {
+        valueDidChange = nil
         currentBindedElements.removeAll()
     }
     
@@ -70,12 +76,13 @@ public class Var<T>: NSObject {
      Method to trigger the `valueDidChange` method and notify the binded elements for a change in the current value.
      */
     private func elementDidChange() {
-        if currentBindedElements.isEmpty {
+        if valueDidChange == nil, currentBindedElements.isEmpty {
             print("Simple-Binding: No elements binded to \(storedValue) or listening for changes!")
             
             return
         }
         
+        valueDidChange?(value)
         notifyBindedElements(value: value)
     }
     

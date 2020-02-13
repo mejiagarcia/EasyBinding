@@ -59,14 +59,13 @@ extension UIActivityIndicatorView: ObserverViewProtocol {
 
 extension UIButton: ObserverViewProtocol {
     public func setValue<T>(_ value: T, to property: BindedProperty) {
-        guard let value = value as? String else {
-            return
-        }
-        
         DispatchQueue.main.async { [weak self] in
             switch property {
             case .title:
-                self?.setTitle(value, for: .normal)
+                self?.setTitle(value as? String, for: .normal)
+                
+            case .state:
+                self?.isEnabled = (value as? Bool) ?? self?.isEnabled ?? false
                 
             default:
                 print("\(property) not supported for UIButton")
@@ -95,14 +94,13 @@ extension UIImageView: ObserverViewProtocol {
 
 extension UITextField: ObserverViewProtocol {
     public func setValue<T>(_ value: T, to property: BindedProperty) {
-        guard let value = value as? String else {
-            return
-        }
-        
         DispatchQueue.main.async { [weak self] in
             switch property {
             case .text:
-                self?.text = value
+                self?.text = value as? String
+                
+            case .state:
+                self?.isEnabled = (value as? Bool) ?? false
                 
             default:
                 print("\(property) not supported for UITextField")

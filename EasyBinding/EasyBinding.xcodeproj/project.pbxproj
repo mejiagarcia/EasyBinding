@@ -85,10 +85,10 @@
 		2C6639AE23F51F32002B55DA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2C6639C723F51F59002B55DA /* Bases */,
 				2C6639C623F51F59002B55DA /* BindedElement.swift */,
-				2C6639CA23F51F59002B55DA /* Extensions */,
 				2C6639CD23F51F5A002B55DA /* Var.swift */,
+				2C6639C723F51F59002B55DA /* Bases */,
+				2C6639CA23F51F59002B55DA /* Extensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
