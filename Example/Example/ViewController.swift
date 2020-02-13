@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SimpleBinding
+import EasyBinding
 
 struct ViewModel {
     let isLoading = Var(true)

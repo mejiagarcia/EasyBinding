@@ -7,115 +7,115 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C40E49D23F506910073F303 /* SimpleBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40E49323F506910073F303 /* SimpleBinding.framework */; };
-		2C40E4A223F506910073F303 /* SimpleBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40E4A123F506910073F303 /* SimpleBindingTests.swift */; };
-		2C40E4A423F506910073F303 /* SimpleBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C40E49623F506910073F303 /* SimpleBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C40E4B323F507560073F303 /* ObserverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40E4AE23F507560073F303 /* ObserverViewProtocol.swift */; };
-		2C40E4B423F507560073F303 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40E4B023F507560073F303 /* Array+Extensions.swift */; };
-		2C40E4B523F507560073F303 /* UIElements+ObserverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40E4B123F507560073F303 /* UIElements+ObserverViewProtocol.swift */; };
-		2C40E4B623F507560073F303 /* Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40E4B223F507560073F303 /* Var.swift */; };
-		2C92A4D623F5113F00A62F60 /* BindedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C92A4D523F5113F00A62F60 /* BindedElement.swift */; };
-		2C92A4D823F5114C00A62F60 /* BindedProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C92A4D723F5114C00A62F60 /* BindedProperty.swift */; };
+		2C6639B623F51F32002B55DA /* EasyBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6639AC23F51F32002B55DA /* EasyBinding.framework */; };
+		2C6639BB23F51F32002B55DA /* EasyBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639BA23F51F32002B55DA /* EasyBindingTests.swift */; };
+		2C6639BD23F51F32002B55DA /* EasyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6639AF23F51F32002B55DA /* EasyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C6639CE23F51F5A002B55DA /* BindedElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639C623F51F59002B55DA /* BindedElement.swift */; };
+		2C6639CF23F51F5A002B55DA /* ObserverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639C823F51F59002B55DA /* ObserverViewProtocol.swift */; };
+		2C6639D023F51F5A002B55DA /* BindedProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639C923F51F59002B55DA /* BindedProperty.swift */; };
+		2C6639D123F51F5A002B55DA /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639CB23F51F59002B55DA /* Array+Extensions.swift */; };
+		2C6639D223F51F5A002B55DA /* UIElements+ObserverViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639CC23F51F59002B55DA /* UIElements+ObserverViewProtocol.swift */; };
+		2C6639D323F51F5A002B55DA /* Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639CD23F51F5A002B55DA /* Var.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C40E49E23F506910073F303 /* PBXContainerItemProxy */ = {
+		2C6639B723F51F32002B55DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2C40E48A23F506910073F303 /* Project object */;
+			containerPortal = 2C6639A323F51F32002B55DA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2C40E49223F506910073F303;
-			remoteInfo = SimpleBinding;
+			remoteGlobalIDString = 2C6639AB23F51F32002B55DA;
+			remoteInfo = EasyBinding;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C40E49323F506910073F303 /* SimpleBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C40E49623F506910073F303 /* SimpleBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBinding.h; sourceTree = "<group>"; };
-		2C40E49723F506910073F303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C40E49C23F506910073F303 /* SimpleBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C40E4A123F506910073F303 /* SimpleBindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBindingTests.swift; sourceTree = "<group>"; };
-		2C40E4A323F506910073F303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C40E4AE23F507560073F303 /* ObserverViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverViewProtocol.swift; sourceTree = "<group>"; };
-		2C40E4B023F507560073F303 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
-		2C40E4B123F507560073F303 /* UIElements+ObserverViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIElements+ObserverViewProtocol.swift"; sourceTree = "<group>"; };
-		2C40E4B223F507560073F303 /* Var.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Var.swift; sourceTree = "<group>"; };
-		2C92A4D523F5113F00A62F60 /* BindedElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindedElement.swift; sourceTree = "<group>"; };
-		2C92A4D723F5114C00A62F60 /* BindedProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindedProperty.swift; sourceTree = "<group>"; };
+		2C6639AC23F51F32002B55DA /* EasyBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6639AF23F51F32002B55DA /* EasyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyBinding.h; sourceTree = "<group>"; };
+		2C6639B023F51F32002B55DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6639B523F51F32002B55DA /* EasyBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6639BA23F51F32002B55DA /* EasyBindingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyBindingTests.swift; sourceTree = "<group>"; };
+		2C6639BC23F51F32002B55DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6639C623F51F59002B55DA /* BindedElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindedElement.swift; sourceTree = "<group>"; };
+		2C6639C823F51F59002B55DA /* ObserverViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverViewProtocol.swift; sourceTree = "<group>"; };
+		2C6639C923F51F59002B55DA /* BindedProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindedProperty.swift; sourceTree = "<group>"; };
+		2C6639CB23F51F59002B55DA /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		2C6639CC23F51F59002B55DA /* UIElements+ObserverViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIElements+ObserverViewProtocol.swift"; sourceTree = "<group>"; };
+		2C6639CD23F51F5A002B55DA /* Var.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Var.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C40E49023F506910073F303 /* Frameworks */ = {
+		2C6639A923F51F32002B55DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C40E49923F506910073F303 /* Frameworks */ = {
+		2C6639B223F51F32002B55DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C40E49D23F506910073F303 /* SimpleBinding.framework in Frameworks */,
+				2C6639B623F51F32002B55DA /* EasyBinding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C40E48923F506910073F303 = {
+		2C6639A223F51F32002B55DA = {
 			isa = PBXGroup;
 			children = (
-				2C40E49523F506910073F303 /* SimpleBinding */,
-				2C40E4A023F506910073F303 /* SimpleBindingTests */,
-				2C40E49423F506910073F303 /* Products */,
+				2C6639AF23F51F32002B55DA /* EasyBinding.h */,
+				2C6639B023F51F32002B55DA /* Info.plist */,
+				2C6639AE23F51F32002B55DA /* Source */,
+				2C6639B923F51F32002B55DA /* EasyBindingTests */,
+				2C6639AD23F51F32002B55DA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2C40E49423F506910073F303 /* Products */ = {
+		2C6639AD23F51F32002B55DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C40E49323F506910073F303 /* SimpleBinding.framework */,
-				2C40E49C23F506910073F303 /* SimpleBindingTests.xctest */,
+				2C6639AC23F51F32002B55DA /* EasyBinding.framework */,
+				2C6639B523F51F32002B55DA /* EasyBindingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C40E49523F506910073F303 /* SimpleBinding */ = {
+		2C6639AE23F51F32002B55DA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2C40E4AD23F507560073F303 /* Bases */,
-				2C40E4AF23F507560073F303 /* Extensions */,
-				2C40E4B223F507560073F303 /* Var.swift */,
-				2C40E49623F506910073F303 /* SimpleBinding.h */,
-				2C40E49723F506910073F303 /* Info.plist */,
-				2C92A4D523F5113F00A62F60 /* BindedElement.swift */,
+				2C6639C723F51F59002B55DA /* Bases */,
+				2C6639C623F51F59002B55DA /* BindedElement.swift */,
+				2C6639CA23F51F59002B55DA /* Extensions */,
+				2C6639CD23F51F5A002B55DA /* Var.swift */,
 			);
-			path = SimpleBinding;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		2C40E4A023F506910073F303 /* SimpleBindingTests */ = {
+		2C6639B923F51F32002B55DA /* EasyBindingTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C40E4A123F506910073F303 /* SimpleBindingTests.swift */,
-				2C40E4A323F506910073F303 /* Info.plist */,
+				2C6639BA23F51F32002B55DA /* EasyBindingTests.swift */,
+				2C6639BC23F51F32002B55DA /* Info.plist */,
 			);
-			path = SimpleBindingTests;
+			path = EasyBindingTests;
 			sourceTree = "<group>";
 		};
-		2C40E4AD23F507560073F303 /* Bases */ = {
+		2C6639C723F51F59002B55DA /* Bases */ = {
 			isa = PBXGroup;
 			children = (
-				2C40E4AE23F507560073F303 /* ObserverViewProtocol.swift */,
-				2C92A4D723F5114C00A62F60 /* BindedProperty.swift */,
+				2C6639C823F51F59002B55DA /* ObserverViewProtocol.swift */,
+				2C6639C923F51F59002B55DA /* BindedProperty.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
 		};
-		2C40E4AF23F507560073F303 /* Extensions */ = {
+		2C6639CA23F51F59002B55DA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2C40E4B023F507560073F303 /* Array+Extensions.swift */,
-				2C40E4B123F507560073F303 /* UIElements+ObserverViewProtocol.swift */,
+				2C6639CB23F51F59002B55DA /* Array+Extensions.swift */,
+				2C6639CC23F51F59002B55DA /* UIElements+ObserverViewProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,73 +123,73 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C40E48E23F506910073F303 /* Headers */ = {
+		2C6639A723F51F32002B55DA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C40E4A423F506910073F303 /* SimpleBinding.h in Headers */,
+				2C6639BD23F51F32002B55DA /* EasyBinding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C40E49223F506910073F303 /* SimpleBinding */ = {
+		2C6639AB23F51F32002B55DA /* EasyBinding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C40E4A723F506910073F303 /* Build configuration list for PBXNativeTarget "SimpleBinding" */;
+			buildConfigurationList = 2C6639C023F51F32002B55DA /* Build configuration list for PBXNativeTarget "EasyBinding" */;
 			buildPhases = (
-				2C40E48E23F506910073F303 /* Headers */,
-				2C40E48F23F506910073F303 /* Sources */,
-				2C40E49023F506910073F303 /* Frameworks */,
-				2C40E49123F506910073F303 /* Resources */,
+				2C6639A723F51F32002B55DA /* Headers */,
+				2C6639A823F51F32002B55DA /* Sources */,
+				2C6639A923F51F32002B55DA /* Frameworks */,
+				2C6639AA23F51F32002B55DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SimpleBinding;
-			productName = SimpleBinding;
-			productReference = 2C40E49323F506910073F303 /* SimpleBinding.framework */;
+			name = EasyBinding;
+			productName = EasyBinding;
+			productReference = 2C6639AC23F51F32002B55DA /* EasyBinding.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2C40E49B23F506910073F303 /* SimpleBindingTests */ = {
+		2C6639B423F51F32002B55DA /* EasyBindingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C40E4AA23F506910073F303 /* Build configuration list for PBXNativeTarget "SimpleBindingTests" */;
+			buildConfigurationList = 2C6639C323F51F32002B55DA /* Build configuration list for PBXNativeTarget "EasyBindingTests" */;
 			buildPhases = (
-				2C40E49823F506910073F303 /* Sources */,
-				2C40E49923F506910073F303 /* Frameworks */,
-				2C40E49A23F506910073F303 /* Resources */,
+				2C6639B123F51F32002B55DA /* Sources */,
+				2C6639B223F51F32002B55DA /* Frameworks */,
+				2C6639B323F51F32002B55DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2C40E49F23F506910073F303 /* PBXTargetDependency */,
+				2C6639B823F51F32002B55DA /* PBXTargetDependency */,
 			);
-			name = SimpleBindingTests;
-			productName = SimpleBindingTests;
-			productReference = 2C40E49C23F506910073F303 /* SimpleBindingTests.xctest */;
+			name = EasyBindingTests;
+			productName = EasyBindingTests;
+			productReference = 2C6639B523F51F32002B55DA /* EasyBindingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C40E48A23F506910073F303 /* Project object */ = {
+		2C6639A323F51F32002B55DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Mejia Garcia";
 				TargetAttributes = {
-					2C40E49223F506910073F303 = {
+					2C6639AB23F51F32002B55DA = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
 					};
-					2C40E49B23F506910073F303 = {
+					2C6639B423F51F32002B55DA = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 2C40E48D23F506910073F303 /* Build configuration list for PBXProject "SimpleBinding" */;
+			buildConfigurationList = 2C6639A623F51F32002B55DA /* Build configuration list for PBXProject "EasyBinding" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -197,26 +197,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 2C40E48923F506910073F303;
-			productRefGroup = 2C40E49423F506910073F303 /* Products */;
+			mainGroup = 2C6639A223F51F32002B55DA;
+			productRefGroup = 2C6639AD23F51F32002B55DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C40E49223F506910073F303 /* SimpleBinding */,
-				2C40E49B23F506910073F303 /* SimpleBindingTests */,
+				2C6639AB23F51F32002B55DA /* EasyBinding */,
+				2C6639B423F51F32002B55DA /* EasyBindingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C40E49123F506910073F303 /* Resources */ = {
+		2C6639AA23F51F32002B55DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C40E49A23F506910073F303 /* Resources */ = {
+		2C6639B323F51F32002B55DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -226,39 +226,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C40E48F23F506910073F303 /* Sources */ = {
+		2C6639A823F51F32002B55DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C92A4D823F5114C00A62F60 /* BindedProperty.swift in Sources */,
-				2C40E4B323F507560073F303 /* ObserverViewProtocol.swift in Sources */,
-				2C40E4B623F507560073F303 /* Var.swift in Sources */,
-				2C92A4D623F5113F00A62F60 /* BindedElement.swift in Sources */,
-				2C40E4B423F507560073F303 /* Array+Extensions.swift in Sources */,
-				2C40E4B523F507560073F303 /* UIElements+ObserverViewProtocol.swift in Sources */,
+				2C6639D223F51F5A002B55DA /* UIElements+ObserverViewProtocol.swift in Sources */,
+				2C6639D023F51F5A002B55DA /* BindedProperty.swift in Sources */,
+				2C6639CF23F51F5A002B55DA /* ObserverViewProtocol.swift in Sources */,
+				2C6639CE23F51F5A002B55DA /* BindedElement.swift in Sources */,
+				2C6639D123F51F5A002B55DA /* Array+Extensions.swift in Sources */,
+				2C6639D323F51F5A002B55DA /* Var.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C40E49823F506910073F303 /* Sources */ = {
+		2C6639B123F51F32002B55DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C40E4A223F506910073F303 /* SimpleBindingTests.swift in Sources */,
+				2C6639BB23F51F32002B55DA /* EasyBindingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2C40E49F23F506910073F303 /* PBXTargetDependency */ = {
+		2C6639B823F51F32002B55DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C40E49223F506910073F303 /* SimpleBinding */;
-			targetProxy = 2C40E49E23F506910073F303 /* PBXContainerItemProxy */;
+			target = 2C6639AB23F51F32002B55DA /* EasyBinding */;
+			targetProxy = 2C6639B723F51F32002B55DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2C40E4A523F506910073F303 /* Debug */ = {
+		2C6639BE23F51F32002B55DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		2C40E4A623F506910073F303 /* Release */ = {
+		2C6639BF23F51F32002B55DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -366,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -378,7 +378,7 @@
 			};
 			name = Release;
 		};
-		2C40E4A823F506910073F303 /* Debug */ = {
+		2C6639C123F51F32002B55DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -387,7 +387,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SimpleBinding/Info.plist;
+				INFOPLIST_FILE = ./Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,7 +395,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleBinding;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.EasyBinding;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -404,7 +404,7 @@
 			};
 			name = Debug;
 		};
-		2C40E4A923F506910073F303 /* Release */ = {
+		2C6639C223F51F32002B55DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -413,7 +413,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SimpleBinding/Info.plist;
+				INFOPLIST_FILE = ./Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,7 +421,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleBinding;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.EasyBinding;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -429,36 +429,36 @@
 			};
 			name = Release;
 		};
-		2C40E4AB23F506910073F303 /* Debug */ = {
+		2C6639C423F51F32002B55DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleBindingTests/Info.plist;
+				INFOPLIST_FILE = EasyBindingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleBindingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.EasyBindingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2C40E4AC23F506910073F303 /* Release */ = {
+		2C6639C523F51F32002B55DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleBindingTests/Info.plist;
+				INFOPLIST_FILE = EasyBindingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.SimpleBindingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mejiagarcia.EasyBindingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,34 +468,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C40E48D23F506910073F303 /* Build configuration list for PBXProject "SimpleBinding" */ = {
+		2C6639A623F51F32002B55DA /* Build configuration list for PBXProject "EasyBinding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C40E4A523F506910073F303 /* Debug */,
-				2C40E4A623F506910073F303 /* Release */,
+				2C6639BE23F51F32002B55DA /* Debug */,
+				2C6639BF23F51F32002B55DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C40E4A723F506910073F303 /* Build configuration list for PBXNativeTarget "SimpleBinding" */ = {
+		2C6639C023F51F32002B55DA /* Build configuration list for PBXNativeTarget "EasyBinding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C40E4A823F506910073F303 /* Debug */,
-				2C40E4A923F506910073F303 /* Release */,
+				2C6639C123F51F32002B55DA /* Debug */,
+				2C6639C223F51F32002B55DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C40E4AA23F506910073F303 /* Build configuration list for PBXNativeTarget "SimpleBindingTests" */ = {
+		2C6639C323F51F32002B55DA /* Build configuration list for PBXNativeTarget "EasyBindingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C40E4AB23F506910073F303 /* Debug */,
-				2C40E4AC23F506910073F303 /* Release */,
+				2C6639C423F51F32002B55DA /* Debug */,
+				2C6639C523F51F32002B55DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C40E48A23F506910073F303 /* Project object */;
+	rootObject = 2C6639A323F51F32002B55DA /* Project object */;
 }

@@ -1,15 +1,15 @@
 //
-//  SimpleBindingTests.swift
-//  SimpleBindingTests
+//  EasyBindingTests.swift
+//  EasyBindingTests
 //
-//  Created by Carlos Mejía on 12/02/20.
+//  Created by Carlos Mejía on 13/02/20.
 //  Copyright © 2020 Mejia Garcia. All rights reserved.
 //
 
 import XCTest
-@testable import SimpleBinding
+@testable import EasyBinding
 
-class SimpleBindingTests: XCTestCase {
+class EasyBindingTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

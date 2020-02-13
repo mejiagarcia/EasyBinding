@@ -13,8 +13,8 @@
 		2C40E47D23F5067A0073F303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40E47B23F5067A0073F303 /* Main.storyboard */; };
 		2C40E47F23F5067C0073F303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C40E47E23F5067C0073F303 /* Assets.xcassets */; };
 		2C40E48223F5067C0073F303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40E48023F5067C0073F303 /* LaunchScreen.storyboard */; };
-		2C40E4B923F507BB0073F303 /* SimpleBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40E4B823F507BB0073F303 /* SimpleBinding.framework */; };
-		2C40E4BA23F507BB0073F303 /* SimpleBinding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40E4B823F507BB0073F303 /* SimpleBinding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C6639D523F51FA4002B55DA /* EasyBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6639D423F51FA4002B55DA /* EasyBinding.framework */; };
+		2C6639D623F51FA4002B55DA /* EasyBinding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6639D423F51FA4002B55DA /* EasyBinding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C40E4BA23F507BB0073F303 /* SimpleBinding.framework in Embed Frameworks */,
+				2C6639D623F51FA4002B55DA /* EasyBinding.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,7 @@
 		2C40E47E23F5067C0073F303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C40E48123F5067C0073F303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C40E48323F5067C0073F303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C40E4B823F507BB0073F303 /* SimpleBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SimpleBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6639D423F51FA4002B55DA /* EasyBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasyBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C40E4B923F507BB0073F303 /* SimpleBinding.framework in Frameworks */,
+				2C6639D523F51FA4002B55DA /* EasyBinding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		2C40E4B723F507BB0073F303 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C40E4B823F507BB0073F303 /* SimpleBinding.framework */,
+				2C6639D423F51FA4002B55DA /* EasyBinding.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
