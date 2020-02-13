@@ -1,9 +1,9 @@
-# SimpleBinding
+# EasyBinding
 
-[![CI Status](https://img.shields.io/travis/mejiagarcia/SimpleBinding.svg?style=flat)](https://travis-ci.org/mejiagarcia/SimpleBinding)
-[![Version](https://img.shields.io/cocoapods/v/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleBinding)
-[![License](https://img.shields.io/cocoapods/l/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleBinding)
-[![Platform](https://img.shields.io/cocoapods/p/SimpleBinding.svg?style=flat)](https://cocoapods.org/pods/SimpleBinding)
+[![CI Status](https://img.shields.io/travis/mejiagarcia/EasyBinding.svg?style=flat)](https://travis-ci.org/mejiagarcia/EasyBinding)
+[![Version](https://img.shields.io/cocoapods/v/EasyBinding.svg?style=flat)](https://cocoapods.org/pods/EasyBinding)
+[![License](https://img.shields.io/cocoapods/l/EasyBinding.svg?style=flat)](https://cocoapods.org/pods/EasyBinding)
+[![Platform](https://img.shields.io/cocoapods/p/EasyBinding.svg?style=flat)](https://cocoapods.org/pods/EasyBinding)
 
 Simplest way to bind your ViewModels to your views :), for real, really simple.
 
@@ -18,11 +18,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-SimpleBinding is available through [CocoaPods](https://cocoapods.org). To install
+EasyBinding is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SimpleBinding'
+pod 'EasyBinding'
 ```
 
 ## Usage
@@ -90,4 +90,4 @@ https://twitter.com/carlosmejia083
 
 ## License
 
-SimpleBinding is available under the MIT license. See the LICENSE file for more info.
+EasyBinding is available under the MIT license. See the LICENSE file for more info.
