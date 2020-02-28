@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+public typealias ObservableBlock<T> = (T) -> Void
+
 public class Var<T>: NSObject {
     // MARK: - Private Properties
     
@@ -23,10 +25,10 @@ public class Var<T>: NSObject {
     
     // MARK: - Public Properties
     
-    /**
-     Manual listener for the value.
-     */
+    @available(*, unavailable, renamed: "observe")
     public var valueDidChange: ((T) -> Void)?
+    
+    public var observe: ObservableBlock<T>?
     
     /**
      The stored value getter and setter, when this value is setted, the method `elementDidChange` is called.
@@ -66,7 +68,7 @@ public class Var<T>: NSObject {
      Method to destroy the listener method and remove all the binded elements.
      */
     public func destroy() {
-        valueDidChange = nil
+        observe = nil
         currentBindedElements.removeAll()
     }
     
@@ -76,13 +78,13 @@ public class Var<T>: NSObject {
      Method to trigger the `valueDidChange` method and notify the binded elements for a change in the current value.
      */
     private func elementDidChange() {
-        if valueDidChange == nil, currentBindedElements.isEmpty {
+        if observe == nil, currentBindedElements.isEmpty {
             print("Simple-Binding: No elements binded to \(storedValue) or listening for changes!")
             
             return
         }
         
-        valueDidChange?(value)
+        observe?(value)
         notifyBindedElements(value: value)
     }
     

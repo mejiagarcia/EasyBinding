@@ -56,6 +56,10 @@ class ViewController: UIViewController {
         viewModel.title.bindTo(navigationController?.navigationBar.topItem, to: .title)
         viewModel.title.bindTo(label, to: .text)
         
+        viewModel.title.observe = {
+            print("Title changed!: " + $0)
+        }
+        
         viewModel.isLoading.bindTo(label, to: .visibility)
         
         viewModel.exampleImage.bindTo(exampleImageView, to: .image)
