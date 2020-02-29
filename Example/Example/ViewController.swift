@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         viewModel.title.bindTo(navigationController?.navigationBar.topItem, to: .title)
         viewModel.title.bindTo(label, to: .text)
         
-        viewModel.title.observe = {
+        viewModel.title.listen {
             print("Title changed!: " + $0)
         }
         
