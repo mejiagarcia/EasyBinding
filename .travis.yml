@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode11.2
+xcode_project: EasyBinding/EasyBinding.xcodeproj
+xcode_scheme: EasyBindingTests
+xcode_destination: platform=iOS Simulator,name=iPhone 5,OS=10.3.1
