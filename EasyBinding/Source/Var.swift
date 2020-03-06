@@ -66,10 +66,14 @@ public class Var<T>: NSObject {
     Method to listen for element changes.
     - Parameter valueDidChange: Block with the changed variable.
     */
-    public func listen(valueDidChange: @escaping (T) -> Void) {
+    public func listen(triggerInitialValue: Bool = false, valueDidChange: @escaping (T) -> Void) {
         notificationCenter.addObserver(forName: valueDidChangeNotification, object: nil, queue: nil) { [weak self] _ in
             guard let self = self else { return }
             valueDidChange(self.storedValue)
+        }
+        
+        if triggerInitialValue {
+            valueDidChange(storedValue)
         }
     }
     

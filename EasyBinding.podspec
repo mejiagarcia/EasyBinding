@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EasyBinding'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.swift_version    = '5.0'
   s.summary          = 'A Simple and light way to perform a data binding.'
   s.description      = 'We know that you only need to bind your ViewModels to your views with the simplest way possible, here is how.'

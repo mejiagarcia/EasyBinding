@@ -59,8 +59,13 @@ isLoading.bindTo(activityIndicator, to: .state)
 
 `.state` is a state designed to specify which attribute of the UI element should be changed.
 ```swift
+public enum VisibilityAnimation {
+    case fade(time: TimeInterval)
+}
+
 public enum BindedProperty {
     case visibility
+    case visibilityAnimated(animation: VisibilityAnimation?)
     case text
     case state
     case title
