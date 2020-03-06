@@ -38,14 +38,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQ3-iN-ro2" customClass="UIViewEB" customModule="Example">
+                                <rect key="frame" x="60" y="546" width="294" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="XJd-iL-pL1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="UQ3-iN-ro2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="1fe-Sd-2pZ"/>
+                            <constraint firstItem="UQ3-iN-ro2" firstAttribute="top" secondItem="vBJ-wg-mS2" secondAttribute="bottom" constant="60" id="7fA-Iu-OYE"/>
                             <constraint firstItem="ktb-qX-dlu" firstAttribute="top" secondItem="MTS-um-2ee" secondAttribute="bottom" constant="30" id="CUj-Rk-mCz"/>
                             <constraint firstItem="zJs-Sn-May" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J4J-vG-Ctg"/>
                             <constraint firstItem="zJs-Sn-May" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SSK-fU-rvw"/>
                             <constraint firstItem="MTS-um-2ee" firstAttribute="top" secondItem="zJs-Sn-May" secondAttribute="bottom" constant="30" id="Xeh-Cb-Qe4"/>
                             <constraint firstItem="vBJ-wg-mS2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YDe-54-XKh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UQ3-iN-ro2" secondAttribute="trailing" constant="60" id="Zec-Md-oby"/>
                             <constraint firstItem="ktb-qX-dlu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="arB-dK-EeG"/>
                             <constraint firstItem="MTS-um-2ee" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUR-6u-pRN"/>
                             <constraint firstItem="vBJ-wg-mS2" firstAttribute="top" secondItem="ktb-qX-dlu" secondAttribute="bottom" constant="30" id="yYe-6R-BGp"/>
@@ -55,6 +65,7 @@
                     <navigationItem key="navigationItem" id="MIV-9u-8Vo"/>
                     <connections>
                         <outlet property="activityIndicator" destination="ktb-qX-dlu" id="6xD-Zf-cw4"/>
+                        <outlet property="basicUIView" destination="UQ3-iN-ro2" id="ugq-Ma-3BE"/>
                         <outlet property="exampleImageView" destination="zJs-Sn-May" id="zer-Uh-oYP"/>
                         <outlet property="label" destination="vBJ-wg-mS2" id="Sml-0B-biP"/>
                     </connections>

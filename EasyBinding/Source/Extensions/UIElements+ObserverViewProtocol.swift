@@ -8,12 +8,35 @@
 import Foundation
 import UIKit
 
+extension UIViewEB: ObserverViewProtocol {
+    public func setValue<T>(_ value: T, to property: BindedProperty) {
+        DispatchQueue.main.async { [weak self] in
+            switch property {
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
+                
+            default:
+                print("\(property) not supported for UIViewEB")
+            }
+        }
+    }
+}
+
 extension UINavigationItem: ObserverViewProtocol {
     public func setValue<T>(_ value: T, to property: BindedProperty) {
         DispatchQueue.main.async { [weak self] in
             switch property {
             case .title:
                 self?.title = value as? String
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self?.titleView, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self?.titleView, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UINavigationItem")
@@ -30,7 +53,10 @@ extension UILabel: ObserverViewProtocol {
                 self?.text = value as? String
                 
             case .visibility:
-                self?.isHidden = (value as? Bool) ?? false
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UILabel")
@@ -50,6 +76,12 @@ extension UIActivityIndicatorView: ObserverViewProtocol {
             case .state:
                 isAnimating ? self?.startAnimating() : self?.stopAnimating()
                 
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
+                
             default:
                 print("\(property) not supported for UIActivityIndicatorView")
             }
@@ -66,6 +98,12 @@ extension UIButton: ObserverViewProtocol {
                 
             case .state:
                 self?.isEnabled = (value as? Bool) ?? self?.isEnabled ?? false
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UIButton")
@@ -85,6 +123,12 @@ extension UIImageView: ObserverViewProtocol {
             case .image:
                 self?.image = value
                 
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
+                
             default:
                 print("\(property) not supported for UIImageView")
             }
@@ -101,6 +145,12 @@ extension UITextField: ObserverViewProtocol {
                 
             case .state:
                 self?.isEnabled = (value as? Bool) ?? false
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UITextField")
@@ -120,6 +170,12 @@ extension UISlider: ObserverViewProtocol {
             case .value:
                 self?.value = value
                 
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
+                
             default:
                 print("\(property) not supported for UISlider")
             }
@@ -137,6 +193,12 @@ extension UISwitch: ObserverViewProtocol {
             switch property {
             case .state:
                 self?.isOn = value
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UISwitch")
@@ -156,6 +218,12 @@ extension UIProgressView: ObserverViewProtocol {
             case .progress:
                 self?.setProgress(value, animated: true)
                 
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
+                
             default:
                 print("\(property) not supported for UIProgressView")
             }
@@ -169,6 +237,12 @@ extension UITableView: ObserverViewProtocol {
             switch property {
             case .dataSource:
                 self?.reloadData()
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UITableView")
@@ -184,6 +258,12 @@ extension UICollectionView: ObserverViewProtocol {
             switch property {
             case .dataSource:
                 self?.reloadData()
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UICollectionView")
@@ -202,6 +282,12 @@ extension UIRefreshControl: ObserverViewProtocol {
             switch property {
             case .state:
                 isLoading ? self?.beginRefreshing() : self?.endRefreshing()
+                
+            case .visibility:
+                Helpers.toggleViewVisibility(view: self, state: value)
+                
+            case .visibilityAnimated(let animation):
+                Helpers.toggleViewVisibility(view: self, state: value, animation: animation)
                 
             default:
                 print("\(property) not supported for UIRefreshControl")

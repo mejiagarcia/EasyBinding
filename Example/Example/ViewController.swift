@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var exampleImageView: UIImageView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var basicUIView: UIViewEB!
     
     // MARK: - UI Actions
    
@@ -52,7 +53,7 @@ class ViewController: UIViewController {
     
     private func setupBindings() {
         viewModel.isLoading.bindTo(activityIndicator, to: .state)
-        
+        viewModel.isLoading.bindTo(basicUIView, to: .visibilityAnimated(animation: .fade(time: 0.5)))
         viewModel.title.bindTo(navigationController?.navigationBar.topItem, to: .title)
         viewModel.title.bindTo(label, to: .text)
         

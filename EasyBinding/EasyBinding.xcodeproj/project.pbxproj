@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C21C17F2411CBEA00073E5E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21C17E2411CBEA00073E5E /* Helpers.swift */; };
+		2C21C1812411CD4D00073E5E /* HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21C1802411CD4D00073E5E /* HelpersTests.swift */; };
+		2C21C1832411D5B600073E5E /* UIViewEB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21C1822411D5B600073E5E /* UIViewEB.swift */; };
 		2C6639B623F51F32002B55DA /* EasyBinding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6639AC23F51F32002B55DA /* EasyBinding.framework */; };
 		2C6639BB23F51F32002B55DA /* EasyBindingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6639BA23F51F32002B55DA /* EasyBindingTests.swift */; };
 		2C6639BD23F51F32002B55DA /* EasyBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6639AF23F51F32002B55DA /* EasyBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C21C17E2411CBEA00073E5E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		2C21C1802411CD4D00073E5E /* HelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpersTests.swift; sourceTree = "<group>"; };
+		2C21C1822411D5B600073E5E /* UIViewEB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEB.swift; sourceTree = "<group>"; };
 		2C6639AC23F51F32002B55DA /* EasyBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C6639AF23F51F32002B55DA /* EasyBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyBinding.h; sourceTree = "<group>"; };
 		2C6639B023F51F32002B55DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C21C17D2411CBDD00073E5E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2C21C17E2411CBEA00073E5E /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		2C6639A223F51F32002B55DA = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +101,7 @@
 			children = (
 				2C6639C623F51F59002B55DA /* BindedElement.swift */,
 				2C6639CD23F51F5A002B55DA /* Var.swift */,
+				2C21C17D2411CBDD00073E5E /* Helpers */,
 				2C6639C723F51F59002B55DA /* Bases */,
 				2C6639CA23F51F59002B55DA /* Extensions */,
 			);
@@ -96,6 +111,7 @@
 		2C6639B923F51F32002B55DA /* EasyBindingTests */ = {
 			isa = PBXGroup;
 			children = (
+				2C21C1802411CD4D00073E5E /* HelpersTests.swift */,
 				2C6639BA23F51F32002B55DA /* EasyBindingTests.swift */,
 				2C6639BC23F51F32002B55DA /* Info.plist */,
 			);
@@ -107,6 +123,7 @@
 			children = (
 				2C6639C823F51F59002B55DA /* ObserverViewProtocol.swift */,
 				2C6639C923F51F59002B55DA /* BindedProperty.swift */,
+				2C21C1822411D5B600073E5E /* UIViewEB.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -231,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6639D223F51F5A002B55DA /* UIElements+ObserverViewProtocol.swift in Sources */,
+				2C21C1832411D5B600073E5E /* UIViewEB.swift in Sources */,
+				2C21C17F2411CBEA00073E5E /* Helpers.swift in Sources */,
 				2C6639D023F51F5A002B55DA /* BindedProperty.swift in Sources */,
 				2C6639CF23F51F5A002B55DA /* ObserverViewProtocol.swift in Sources */,
 				2C6639CE23F51F5A002B55DA /* BindedElement.swift in Sources */,
@@ -244,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C6639BB23F51F32002B55DA /* EasyBindingTests.swift in Sources */,
+				2C21C1812411CD4D00073E5E /* HelpersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

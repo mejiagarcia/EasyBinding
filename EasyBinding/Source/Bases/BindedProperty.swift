@@ -8,8 +8,13 @@
 
 import Foundation
 
+public enum VisibilityAnimation {
+    case fade(time: TimeInterval)
+}
+
 public enum BindedProperty {
     case visibility
+    case visibilityAnimated(animation: VisibilityAnimation?)
     case text
     case state
     case title
