@@ -76,6 +76,27 @@ public enum BindedProperty {
 }
 ```
 
+`listen` is method to listen the value changes of your Var.
+```swift
+func listen(triggerInitialValue: Bool = false, valueDidChange: @escaping (T) -> Void)
+```
+
+Usage
+
+```swift
+myVar.listen { newValue in
+    print("The new value is: \(newValue)")
+}
+```
+
+This method will trigger the call only if your variable change, if you want to catch the initial value, you can pass the parameter `triggerInitialValue` (default false) to `true`.
+
+```swift
+myVar.listen(triggerInitialValue: true) { newValue in
+    print("The new value is: \(newValue)")
+}
+```
+
 
 ## Add supported views
 If you want to support new UIViews or even your custom classes, you only have to conform the `ObserverViewProtocol`, this protocol contains a simple method named` setValue` that triggers when any observable variable binded changes, you can customize your behavior when this event happends.
