@@ -17,17 +17,13 @@ public class Var<T>: NSObject {
      Array of binden elements, each element can be nil and should implement the `ObserverViewProtocol` protocol.
      */
     private var currentBindedElements = [BindedElement?]()
-    
-    private let notificationCenter = NotificationCenter.default
-    
-    private var valueDidChangeNotification: NSNotification.Name {
-        return NSNotification.Name(String(describing: self))
-    }
-    
+
     /**
      The stored generic value (your variable).
      */
     private var storedValue: T
+    
+    private var listeners: [((T) -> Void)?] = []
     
     // MARK: - Public Properties
     
@@ -67,10 +63,7 @@ public class Var<T>: NSObject {
     - Parameter valueDidChange: Block with the changed variable.
     */
     public func listen(triggerInitialValue: Bool = false, valueDidChange: @escaping (T) -> Void) {
-        notificationCenter.addObserver(forName: valueDidChangeNotification, object: nil, queue: nil) { [weak self] _ in
-            guard let self = self else { return }
-            valueDidChange(self.storedValue)
-        }
+        self.listeners.append(valueDidChange)
         
         if triggerInitialValue {
             valueDidChange(storedValue)
@@ -90,7 +83,7 @@ public class Var<T>: NSObject {
      Method to destroy the listener method and remove all the binded elements.
      */
     public func destroy() {
-        notificationCenter.removeObserver(self, name: valueDidChangeNotification, object: nil)
+        listeners = []
         currentBindedElements.removeAll()
     }
     
@@ -100,7 +93,7 @@ public class Var<T>: NSObject {
      Method to trigger the `valueDidChange` method and notify the binded elements for a change in the current value.
      */
     private func elementDidChange() {
-        NotificationCenter.default.post(name: valueDidChangeNotification, object: nil)
+        listeners.forEach { $0?(storedValue) }
         notifyBindedElements(value: value)
     }
     

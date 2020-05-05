@@ -61,6 +61,10 @@ class ViewController: UIViewController {
             print("Title changed!: " + $0)
         }
         
+        viewModel.title.listen {
+            print("Title 1 changed!: " + $0)
+        }
+        
         viewModel.isLoading.bindTo(label, to: .visibility)
         
         viewModel.exampleImage.bindTo(exampleImageView, to: .image)
