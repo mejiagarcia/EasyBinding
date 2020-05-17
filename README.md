@@ -76,7 +76,7 @@ public enum BindedProperty {
 }
 ```
 
-`listen` is method to listen the value changes of your Var.
+`listen` is a method to listen the value changes of your Var.
 ```swift
 func listen(triggerInitialValue: Bool = false, valueDidChange: @escaping (T) -> Void)
 ```
@@ -97,6 +97,14 @@ myVar.listen(triggerInitialValue: true) { newValue in
 }
 ```
 
+
+`notify` is a method to trigger manually all the variable listeners (listen method and UI binded objects).
+
+Usage
+
+```swift
+myVar.notify()
+```
 
 ## Add supported views
 If you want to support new UIViews or even your custom classes, you only have to conform the `ObserverViewProtocol`, this protocol contains a simple method named` setValue` that triggers when any observable variable binded changes, you can customize your behavior when this event happends.

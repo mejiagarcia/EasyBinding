@@ -87,6 +87,13 @@ public class Var<T>: NSObject {
         currentBindedElements.removeAll()
     }
     
+    /**
+     Method to trigger manually the all the observers for this variable.
+     */
+    public func notify() {
+        elementDidChange()
+    }
+    
     // MARK: - Private Methods
     
     /**
