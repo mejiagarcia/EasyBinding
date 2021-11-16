@@ -18,11 +18,24 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
+### Cocoapods
+
 EasyBinding is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'EasyBinding'
+```
+
+### Swift Package Manager
+
+EasyBinding is available through [Swift Package Manager](https://swift.org/package-manager/). To install
+it, simply add the following line to your `Package.swift` or your xcode project configuration.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/mejiagarcia/EasyBinding.git", .upToNextMajor(from: "0.2.6"))
+]
 ```
 
 ## Usage
@@ -115,12 +128,6 @@ public protocol ObserverViewProtocol {
     func setValue<T>(_ value: T, to property: BindedProperty)
 }
 ```
-
-## Author
-Carlos Mejía,
-carlosmejia083@gmail.com
-
-https://twitter.com/carlosmejia083
 
 ## License
 
