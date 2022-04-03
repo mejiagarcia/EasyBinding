@@ -1,3 +1,5 @@
+# So it was fun, but is time to switch to Combine. I created this library because I didn't like SwiftRX. This library saw production a cuple times and I'm proud of it, but I but I'm not going to reinvent the wheel.
+
 # EasyBinding
 
 [![CI Status](https://img.shields.io/travis/mejiagarcia/EasyBinding.svg?style=flat)](https://travis-ci.org/mejiagarcia/EasyBinding)
